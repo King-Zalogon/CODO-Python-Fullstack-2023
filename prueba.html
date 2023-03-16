@@ -10,6 +10,7 @@
 <body background="HTML_2/fondos/fondo_t.jpg" bgcolor="#000000" text="#ffffff" link="#ffff33" alink="#ffffcc" vlink="ffff00" topmargin=2 leftmargin=2 marginheight=2 marginwidth=2>
     Inicia el body
     <p id="inicio"></p>
+    <a href="#fin"> Ir al final</a>
 
     <h1>Titulo con etiqueda h1 </h1>
     <h3>Titulo con etiqueda h3 </h3>
@@ -19,7 +20,7 @@
     
     <!-- Este texto lo volvi comentario usando CTRL+K+C -->
     
-    <a href="#fin"> Ir al final</a>
+
     
 
     <p>Codo a Codo</p>
@@ -87,9 +88,7 @@
     <a href="https://github.com/King-Zalogon" target="_blank"> link a mi github </a>
     </p>
 
-    <p id="fin">
-        <a href="#inicio"> Ir al comienzo </a> 
-    </p>
+
 
     <h1>Imágenes</h1>
     <img src="HTML_3/img/icon_doc.png" width="120px" alt="Texto alternativo para describir la imagen u objeto en caso de que falte o se utilice un lector de página">
@@ -116,7 +115,14 @@
         <h1>Sitio web</h1>
         <iframe src="https://www.wikipedia.org/" width="600" height="450" ></iframe>
     </p>
-
+    <br>
+    <br>
+    <p>
+        <iframe name=miframeflotante src="colabora.htm" width=400 height=550 frameborder="0" scrolling=yes marginwidth=2 marginheight=4 align=left>Tu navegador no soporta frames!</iframe>
+    </p>
+    <br>
+    <br>
+    <br>
     <p>
         <h1>Tablas</h1>
         
@@ -156,6 +162,200 @@
         <br>
         <img src="HTML_3/Safe Colors.jpg">
 
+    </p>
+
+    <br>
+    <br>
+    <form action="HTML_3/New Text Document.txt" method="post" enctype="text/plain">
+        <input type="text" name="usuario" size="20" maxlength="40" value="Tu nombre de usuario">
+        <br>
+        <br>
+        <input type="password" name="Tu no contraseña">
+        <br>
+        <br>
+        <textarea name="comentario" rows="10" cols="40"></textarea>
+        <br>
+        <br>
+        <select name="estacion">
+
+            <option value="1">Primavera</option>
+            
+            <option>Verano</option>
+            
+            <option selected>Otoño</option>
+            
+            <option>Invierno</option>
+            
+            </select>
+        <br>
+        <br>
+        <select name="comida" multiple>
+
+            <option>Pizza</option>
+            
+            <option>Hamburguesas</option>
+            
+            <option>Gaseosa</option>
+            
+            <option>Helado</option>
+            
+            </select>
+        <br>
+        <br>
+        
+        <input type="radio" name="estacion" value="1">Primavera
+        <br>
+        <input type="radio" name="estacion" value="2" checked>Verano
+        <br>
+        <input type="radio" name="estacion" value="3">Otoño
+        <br>
+        <input type="radio" name="estacion" value="4">Invierno
+
+        <br>
+        <br>
+        <input type="checkbox" name="queso">Me gusta el queso.
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+        <br>
+        <br>
+        <input type="reset" value="Borrar">
+        <br>
+        <br>
+        <input type=hidden name="clave" value="1234">
+        <br>
+        <br>
+        <input type=button value="Texto escrito en el botón">
+        <br>
+        <br>
+
+        <br>
+        <br>
+    </form>
+
+    <form action="mailto:mail@gmail.com" method="post" enctype="text/plain">
+
+        Nombre <input type="text" name="nombre" size="30" maxlength="100">
+        
+        <br>
+        
+        Email <input type="text" name="email" size="25" maxlength="100" value="@">
+        
+        <br>
+        
+        Población <input type="text" name="poblacion" size="20" maxlength="60">
+        
+        <br>
+        
+        Sexo
+        
+        <br>
+        
+        <input type="radio" name="sexo" value="Varon" checked> Hombre
+        
+        <br>
+        
+        <input type="radio" name="sexo" value="Mujer"> Mujer
+        
+        <br>
+        
+        <br>
+        
+        Frecuencia de los viajes
+        
+        <br>
+        
+        <select name="utilizacion">
+        
+        <option value="1">Varias veces al dia
+        
+        <option value="2">Una vez al dia
+        
+        <option value="3">Varias veces a la semana
+        
+        <option value="4">varias veces al mes
+        
+        </select>
+        
+        <br>
+        
+        <br>
+        
+        Comentarios sobre su satisfacción personal
+        
+        <br>
+        
+        <textarea cols="30" rows="7" name="comentarios"></textarea>
+        
+        <br>
+        
+        <br>
+        
+        <input type="checkbox" name="recibir_info" checked> Deseo recibir notificación de las novedades en las líneas de autobuses.
+        
+        <br>
+        
+        <br>
+        
+        <input type="submit" value="Enviar formulario">
+        
+        <br>
+        
+        <br>
+        
+        <input type="Reset" value="Borrar todo">
+        
+        </form>
+
+        <br>
+        <br>
+        <h1>Formulario de prueba</h1>
+        <form action="HTML_4/mostrar_datos.html" target="_blank">
+            <div>
+                <label for="user1">Usuario:</label>
+                <input type="text" name="user" id="user1" placeholder="Apellido, Nombre" title="Soy un globo!">
+            </div>
+            <br>
+            <div>
+                <label for="pass1">Password:</label>
+                <input type="password" name="pass" id="pass1">
+            </div>
+            <br>
+            <div>
+                <label for="dni1">DNI Nro</label>
+                <input type="number" name="dni" id="dni1" maxlength="8">
+            </div>
+            <br>
+            <div>
+                <label for="pais1">País:</label>
+                <input type="text" name="country" id="pais1" value="Argentina">
+            </div>
+            <br>
+            <div>
+                <label for="edad1">Edad</label>
+                <input type="number" name="age" id="edad1" min="0" max="99">
+            </div>
+            <br>
+            <div>
+                <label for="foto1">Fotografía:</label>
+                <input type="file" name="photo" id="foto1">
+            </div>
+            <br>
+            <div>
+                <label for="fecha1">Fecha:</label>
+                <input type="date" name="date" id="fecha1">
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Enviar Formulario">
+                <input type="reset" value="Borrar Formulario">
+            </div>
+        </form>
+
+    <br>
+    <br>
+    <p id="fin">
+        <a href="#inicio"> Ir al comienzo </a> 
     </p>
 
     <br>
