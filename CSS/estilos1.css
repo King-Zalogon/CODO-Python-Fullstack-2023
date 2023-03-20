@@ -1,0 +1,45 @@
+
+/* con barra asterisco puedo comentar pero siempre tengo que cerrarlo */
+
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkblue;
+}
+
+p {
+    color:indigo;
+    font-size: 20px;
+}
+
+tr {
+    color:bisque;
+    background-color: coral;
+}
+
+.micolor {
+    color: blue ;
+    background-color: cornflowerblue;
+}
+
+.mifont {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+}
+
+#gato { /* Un id solo debería usarse una vez,
+    si lo voy a usar para un conjunto de items es mejor crear una clase*/
+    background-color: blueviolet;
+
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.clasediv {
+    background-color: chartreuse;
+    border-style: double;
+    width: 400px; /* con esto lo seteo a un ancho independientemente que el usuario achique o agrande el ancho de su navegador*/
+    
+}
+
