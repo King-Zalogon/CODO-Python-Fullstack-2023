@@ -32,6 +32,12 @@ tr {
 
 }
 
+.output {
+    font: 2em 'Fira Sans', sans-serif;
+    letter-spacing: 5px;
+    color: chartreuse;
+}
+
 h1{
     font-family: 'Times New Roman', Times, serif;
 }
@@ -56,3 +62,79 @@ h2{
 h3{
     
 }
+
+.nota {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.editorial {
+    background: rgb(255, 0, 0, .25);
+    padding: 5px 20px 10px; /*con un solo valor lo aplica para los 4 lados. Con 2 valores el 1ero lo aplica para arriba y abajo, y el 2do para los costados, con 4 valores es uno para cada margen*/
+}
+
+.editorial:before {
+    content: 'Editor: ';
+}
+
+blockquote {
+    background: #aaa;
+    border-radius: 5px; /*define la curvatura de los bordes*/
+    margin: 16px 5; /*margen externo de la caja*/
+}
+blockquote p {
+    padding: 15px;
+}
+cite {
+    margin: 16px 32px;
+}
+blockquote p::before {
+    content: '\201C'; /*código de comillas que abren*/
+}
+blockquote p::after {
+    content: '\201D'; /*código de comillas que cierran*/
+}
+[contenteditable='true'] {
+    caret-color: red;
+}
+
+ul {
+    margin: 10px 0 0;
+}
+li {
+    position: relative; /*relativa con respecto a la posición que trae el li */
+    width: 200px;
+    padding-bottom: 10px;
+}
+li:after {
+    content: "N° Socio: " attr(data-socio);
+    position: absolute;
+    top: -22px;
+    left: 10px;
+    background: black;
+    color: white;
+    padding: 2px;
+    border: 1px solid #aaa;
+    opacity: 0;
+    transition: 0.5s opacity;
+}
+li:hover:after {
+    opacity: 1;
+}
+
+#resaltar {
+    background: linear-gradient(to bottom, #ffe8d4, #f69d3c);
+    border: 1px solid #696969;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px black;
+}
+
+#resaltar:before {
+    content: " i ";
+    margin-right: 5px;
+    color: red;
+    font-weight: bold;
+    font-size: larger;
+}
+
