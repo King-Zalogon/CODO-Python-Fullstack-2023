@@ -13,7 +13,7 @@ if (a != b) {console.log("a != b")}
 console.log("*** THE END ***")
 
 // var nota = prompt("Nota?")
-var nota = 8
+var nota = 6
 
 
 if (nota > 0 && nota <= 10) {
@@ -37,14 +37,14 @@ var veces = 1
     veces++
 } */
 
-// do {
-//     document.write("<p>Hola</p>")
-//     veces++
-// } while (veces >= 10)
+do {
+    document.write("<p>Hola</p>")
+    veces++
+} while (veces >= 10)
 
-// for ( var i = 1 ; i <= 10 ; i++) {
-//     document.write("<p>Ya te los dije ", i, " veces!</p>")
-// }
+for ( var i = 1 ; i <= 10 ; i++) {
+    document.write("<p>Ya te los dije ", i, " veces!</p>")
+}
 
 for (var i = 1 ; i <= 10; i++) {
     document.write("<p>" + i + " es ")
@@ -55,3 +55,18 @@ for (var i = 1 ; i <= 10; i++) {
     }
 }
 
+
+let suma=0;
+
+for(var i=0;i<=5;i++){
+
+  suma=suma+i;
+
+}
+
+console.log(i);
+
+
+fc = ((a) => a + 100)
+
+console.log( fc(10) )
