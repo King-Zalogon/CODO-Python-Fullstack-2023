@@ -96,13 +96,28 @@ console.log(num1 === str1)
 
 // Escribe un programa que pida una frase y escriba cuantas veces aparece la letra a
 
-var frase = prompt("Ingrese una frase: ")
-var count_a = 0
+var frase = prompt ('Ingresa una frase: ')
+console.log(frase)
+console.log(frase.length)
+var countA = 0
+var checkLetter = prompt ('Ingresa una letra: ')
+console.log(checkLetter)
 
-for (var i=0; 101; ++i){
-  console.log(frase[i])
+// console.log(frase[3] == checkLetter)
+
+// for (var i = 0; i <= frase.length; i++){
+//     var myLetter = frase[i];
+//     console.log(myLetter);
+//     if (myLetter == checkLetter){
+//         console.log('Equal');
+//         countA++
+    
+//     } else {
+//         console.log('Different')
+//     }
+// }
+
+for (var i = 0; i <= frase.length; i++){
+    frase[i] == checkLetter ? countA++ : "" ;
 }
-
-  
-
-console.log(count_a)
+console.log('En la frase', frase, 'la letra', checkLetter, 'aparece', countA, 'veces.')
