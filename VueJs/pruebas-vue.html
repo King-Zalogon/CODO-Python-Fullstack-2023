@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trying Vue</title>
+</head>
+<body>
+    <h1>Praise the Omnissiah!</h1>
+    <p>Hail the Mechanicus</p>
+    <p>{{myName}}</p>
+
+    <div id="techpriest">
+        <p>Machines rule!</p>
+        <p>{{myMessage}}{{myName}}</p>
+        <p v-text="myName"> Hidden text </p>
+        <p v-html="myName"> Hidden text </p>
+
+
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        // const app = Vue.createApp {}  <-old way
+        const {createApp} = Vue
+        const myApp = createApp({
+            data() {
+                return{
+                    myName: "<b>Ramirez</b>",
+                    myMessage: "Entaro Adun, "
+                }
+            }
+        })
+
+        myApp.mount("#techpriest")
+    </script>
+
+
+</body>
+</html>
