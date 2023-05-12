@@ -164,3 +164,5 @@ let aDog = new Dog('Tito', 'grey', 2002)
 
 console.log(`Hola ${aDog.dogName.toUpperCase()}!`)
 
+console.log(Math.random())
+
