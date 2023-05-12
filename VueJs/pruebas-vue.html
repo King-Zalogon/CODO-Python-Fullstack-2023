@@ -15,7 +15,7 @@
         <p>Machines rule!</p>
         <p>{{myMessage}}{{myName}}</p>
         <p v-text="myName"> Hidden text </p>
-        <p v-html="myName"> Hidden text </p>
+        <p v-html="myName"> Can use p div css, etc </p>
 
 
     </div>
@@ -30,7 +30,14 @@
                     myName: "<b>Ramirez</b>",
                     myMessage: "Entaro Adun, "
                 }
-            }
+            },
+
+            mounted () {
+
+            },
+            methods: {
+
+            },
         })
 
         myApp.mount("#techpriest")

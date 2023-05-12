@@ -120,7 +120,7 @@ console.log(checkLetter)
 //     }
 // }
 
-for (var i = 0; i <= frase.length; i++){
+for (let i = 0; i <= frase.length; i++){
     frase[i] == checkLetter ? countA++ : "" ;
 }
 console.log('En la frase', frase, 'la letra', checkLetter, 'aparece', countA, 'veces.')
@@ -130,3 +130,37 @@ function sumar(a, b) {
 }
 
 console.log(sumar(77, 15))
+
+let myObject = new Object()
+
+myObject.someProperty = 'whatever'
+
+let myDog = {
+    dogColor : 'white',
+    dogName : 'Hermes',
+    dogBark: function(n = 1) {
+        for (let i = 0; i < n; i++) {
+            console.log('Woof!')
+        }
+    },
+    sitDown() {console.log(this.dogName, 'sits down.')}
+
+}
+
+myDog['dogBirth'] = 2019
+myDog.dogBark(3)
+myDog.sitDown()
+console.log(myDog.dogBirth)
+
+class Dog {
+    constructor(name, color, birth) {
+        this.dogName = name
+        this.dogColor = color
+        this.dogBirth = birth
+    }
+}
+
+let aDog = new Dog('Tito', 'grey', 2002)
+
+console.log(`Hola ${aDog.dogName.toUpperCase()}!`)
+
