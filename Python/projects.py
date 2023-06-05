@@ -149,3 +149,38 @@ list_cart_items()
 
 # list_products()
 
+print("\033[H\033[J")     # Clean screen ascii code
+
+class Product:
+    #constructor or initializer:
+    def __init__(self, item_id, description, amount, price):
+        self.code = item_id
+        self.item = description
+        self.stock = amount
+        self.cost = price
+
+    def __str__(self):
+        message = f"Item code: {self.code}\n"
+        message += f"Item description: {self.item}\n"
+        message += f"Item amount: {self.stock} units\n"
+        message += f"Item price: ${self.cost}\n"
+        return message
+    
+    def __del__(self):
+        print(f"{self.item} ha sido eliminado")
+
+    def modificar(self, description, amount, price):
+        self.item = description
+        self.stock = amount
+        self.cost = price
+
+
+
+product1 = Product(1, "Mouse", 10, 1000)
+product2 = Product(2, "Keyboard", 15, 4000)
+
+# del product1
+
+print(product1)
+print(product2)
+
