@@ -172,15 +172,3 @@ class Product:
     def modificar(self, description, amount, price):
         self.item = description
         self.stock = amount
-        self.cost = price
-
-
-
-product1 = Product(1, "Mouse", 10, 1000)
-product2 = Product(2, "Keyboard", 15, 4000)
-
-# del product1
-
-print(product1)
-print(product2)
-
