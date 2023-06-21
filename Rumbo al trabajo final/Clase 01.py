@@ -181,7 +181,7 @@ def agregar_al_carrito(codigo, cantidad):
             # Si existe, sumo a la cantidad del carrito...
             item['cantidad'] += cantidad
             # ...y descuento del stock de ese producto.
-            producto['cantidad'] += cantidad
+            producto['cantidad'] -= cantidad
             return True
 
     # Si el producto no está en el carrito, se agrega como un nuevo item
